@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<header>
+    <logo src="../img/logotipo.png" alt="Reservas"/>
+    <nav>
+        <link href="../web/gastrobar.xml">Gastrobar</link>
+        <link href="../web/atracciones.xml">Atracciones</link>
+        <link href="../web/eventos.xml">Eventos</link>
+    </nav>
+</header>

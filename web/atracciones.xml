@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="atracciones.xsl"?>
+<sitio>
+    <gastrobar>
+        <plato codigo="A1">
+            <nombre>Entrante 1</nombre>
+            <imagen>../img/entrante1.jpg</imagen>
+            <precio>6.00</precio>
+        </plato>
+        <plato codigo="B2">
+            <nombre>Entrante 2</nombre>
+            <imagen>../img/entrante2.jpg</imagen>
+            <precio>7.50</precio>
+        </plato>
+        <plato codigo="C3">
+            <nombre>Entrante 3</nombre>
+            <imagen>../img/entrante3.jpg</imagen>
+            <precio>5.50</precio>
+        </plato>
+    </gastrobar>
+
+    <atracciones>
+        <atraccion>
+            <nombre>Montaña Rusa</nombre>
+            <edad_minima>12</edad_minima>
+            <peso_maximo>120</peso_maximo>
+        </atraccion>
+        <atraccion>
+            <nombre>Coches de choque</nombre>
+            <edad_minima>5</edad_minima>
+            <peso_maximo>100</peso_maximo>
+        </atraccion>
+    </atracciones>
+
+    <eventos>
+        <evento fecha="2024-12-01">
+            <nombre>Concierto Navideño</nombre>
+            <comentarios total="2">
+                <comentario>Espectacular evento.</comentario>
+                <comentario>No puedo esperar para ir.</comentario>
+            </comentarios>
+        </evento>
+        <evento fecha="2024-12-10">
+            <nombre>Fiesta Vaquera</nombre>
+            <comentarios total="2">
+                <comentario>No puedo esperar para ir.</comentario>
+                <comentario>Espectacular evento.</comentario>
+            </comentarios>
+        </evento>
+    </eventos>
+</sitio>
