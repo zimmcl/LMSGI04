@@ -80,7 +80,7 @@ main h1 {
 }
 
 .articulo {
-	margin: 5%;
+	margin: 5% 3%;
 	width: 20%;
 	height: 400px;
 	background-color: #d7c9b0;
@@ -134,9 +134,6 @@ main h1 {
 	border-radius: 15px;
 	text-transform: uppercase;
 }
-
-
-
 
 /*Estilos para atracciones */
 table {

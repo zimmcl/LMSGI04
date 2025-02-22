@@ -17,6 +17,11 @@
             <imagen>../img/entrante3.jpg</imagen>
             <precio>5.50</precio>
         </plato>
+        <plato codigo="A2">
+            <nombre>Costilla</nombre>
+            <imagen>../img/entrante4.jpg</imagen>
+            <precio>8.99</precio>
+        </plato>
     </gastrobar>
 
     <atracciones>
