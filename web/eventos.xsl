@@ -5,8 +5,8 @@
     <xsl:include href="../base/header.xsl"/>
     <xsl:include href="../base/footer.xsl"/>
 
-    <!-- Plantilla para mostrar los eventos del anio seteado. Actualmente el 2024 -->
-    <xsl:template match="/sitio">
+    <!-- Plantilla para mostrar los eventos del año 2024 -->
+    <xsl:template match="/gestionParque">
         <xsl:variable name="anio" select="'2024'"/>
         <html>
             <head>
@@ -15,13 +15,13 @@
                 <link href="../css/estilo.css" rel="stylesheet" type="text/css"/>
             </head>
             <body>
-                 <!-- Incluir contenido de header.xml -->
+                <!-- Incluir contenido de header.xml -->
                 <xsl:apply-templates select="document('../base/header.xml')/header"/>   
 
                 <main id="eventos">
                     <h1>Eventos del <xsl:value-of select="$anio"/></h1>
-                    <xsl:apply-templates select="eventos/evento[starts-with(@fecha, $anio)]">
-                        <xsl:sort select="@fecha" order="descending"/>
+                    <xsl:apply-templates select="eventos/evento[starts-with(fechaHora, $anio)]">
+                        <xsl:sort select="fechaHora" order="descending"/>
                     </xsl:apply-templates>
                 </main>
                 
@@ -33,7 +33,7 @@
 
     <xsl:template match="evento">
         <article class="eventos">
-            <h4><xsl:value-of select="nombre"/> - <xsl:value-of select="count(comentarios/comentario)"/> Comentarios  </h4>
+            <h4><xsl:value-of select="descripcion"/> - <xsl:value-of select="count(comentarios/comentario)"/> Comentarios</h4>
             <ul>
                 <xsl:apply-templates select="comentarios/comentario"/>
             </ul>

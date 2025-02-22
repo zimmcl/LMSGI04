@@ -6,7 +6,7 @@
     <xsl:include href="../base/footer.xsl"/>
     
     <!-- Plantilla para mostrar los platos del gastrobar con el mismo estilo -->
-    <xsl:template match="/sitio">
+    <xsl:template match="/gestionParque">
         <html>
             <head>
                 <meta charset="UTF-8"/>
@@ -19,7 +19,7 @@
                 
                 <main id="gastrobar">
                     <h1>ENTRANTES</h1>
-                    <xsl:apply-templates select="gastrobar/plato"/>
+                    <xsl:apply-templates select="gastrobar/plato[@categoria='Entrante']"/>
                 </main>
                 
                 <!-- Incluir contenido de footer.xml -->
@@ -38,7 +38,7 @@
             <xsl:if test="starts-with(@codigo, 'A')">
                 <img src="../img/icono-novedad.png" class="novedad-icono"/>
             </xsl:if>
-            <h2><xsl:value-of select="nombre"/></h2>
+            <h2><xsl:value-of select="nom_plato"/></h2>
             <h3><xsl:value-of select="precio"/>€</h3>
         </article>
     </xsl:template>
